@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace JustSteveKing\Laravel\LaravelStoplight\Tests;
+namespace NCMuseumNaturalSciences\Laravel\LaravelStoplight\Tests;
 
-use JustSteveKing\Laravel\LaravelStoplight\Tests\TestCase;
+use NCMuseumNaturalSciences\Laravel\LaravelStoplight\Tests\TestCase;
 
 class DocumentationTest extends TestCase
 {
@@ -13,7 +13,7 @@ class DocumentationTest extends TestCase
      */
     public function it_responds_as_expected()
     {
-        $response = $this->get(config('stoplight.path.url'));
+        $response = $this->get(config('stoplight.path.development.url'));
 
         $response->assertStatus(200);
     }
