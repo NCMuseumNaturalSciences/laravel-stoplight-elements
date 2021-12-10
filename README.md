@@ -13,7 +13,7 @@ Easily publish your API documentation using your OpenAPI document in your Larave
 You can install this package via composer:
 
 ```bash
-composer require NCMuseumOfNaturalSciences/laravel-stoplight-elements
+composer require ncmns/laravel-stoplight-elements
 ```
 
 
