@@ -22,7 +22,7 @@ composer require ncmns/laravel-stoplight-elements
 You can publish the configuration file with:
 
 ```bash
-php artisan vendor:publish --provider="NCMuseumOfNaturalSciences\Laravel\LaravelStoplight\StoplightServiceProvider" --tag="config"
+php artisan vendor:publish --provider="NCMuseumNaturalSciences\Laravel\LaravelStoplight\StoplightServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
