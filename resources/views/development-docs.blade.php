@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ config('stoplight.title') }}</title>
+    <title>{{ config('stoplight.title') }} | Development</title>
     <!-- Embed elements Elements via Web Component -->
     <script src="https://unpkg.com/@stoplight/elements@v7/web-components.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@stoplight/elements@v7/styles.min.css">
