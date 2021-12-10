@@ -18,7 +18,7 @@ class StoplightServiceProvider extends ServiceProvider
 
             // Publish Views
             $this->publishes([
-                __DIR__ . '/../resources/views' => base_path('resources/views/vendor/stoplight'),
+                __DIR__ . '/../resources/views' => base_path('resources/views/vendor/ncmns/stoplight'),
             ], 'views');
         }
 
