@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace JustSteveKing\Laravel\LaravelStoplight\Tests;
+namespace NCMuseumNaturalSciences\Laravel\LaravelStoplight\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use JustSteveKing\Laravel\LaravelStoplight\StoplightServiceProvider;
+use NCMuseumNaturalSciences\Laravel\LaravelStoplight\StoplightServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -23,6 +23,7 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('stoplight.path.url', 'api/docs');
+        config()->set('stoplight.path.development.url', 'api/docs/development');
+        config()->set('stoplight.path.production.url', 'api/docs/production');
     }
 }
