@@ -43,7 +43,7 @@ return [
          'development' => [
                 'path' => env('STOPLIGHT_DEV_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
             ],
-            production => [
+            'production' => [
                  'path' => env('STOPLIGHT_PROD_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
             ],
     ],
