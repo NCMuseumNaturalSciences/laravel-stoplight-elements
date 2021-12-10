@@ -35,7 +35,7 @@ class StoplightServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/stoplight.php',
+            __DIR__ . '/../config/ncmns-stoplight.php',
             'stoplight',
         );
     }
