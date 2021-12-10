@@ -3,15 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 Route::view(
-    config('stoplight.development.path.url'),
+    config('stoplight.path.development.url'),
     'stoplight::development-docs',
 )->name(
-    config('stoplight.development.path.name')
+    config('stoplight.path.development.name')
 );
 
 Route::view(
-    config('stoplight.production.path.url'),
+    config('stoplight.path.production.url'),
     'stoplight::production-docs',
 )->name(
-    config('stoplight.production.path.name')
+    config('stoplight.path.production.name')
 );
