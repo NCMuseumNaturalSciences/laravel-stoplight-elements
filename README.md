@@ -1,4 +1,5 @@
 # Laravel Stoplight Elements
+FORK OF https://github.com/JustSteveKing/laravel-stoplight-elements
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -12,7 +13,7 @@ Easily publish your API documentation using your OpenAPI document in your Larave
 You can install this package via composer:
 
 ```bash
-composer require juststeveking/laravel-stoplight-elements
+composer require NCMuseumOfNaturalSciences/laravel-stoplight-elements
 ```
 
 
@@ -21,7 +22,7 @@ composer require juststeveking/laravel-stoplight-elements
 You can publish the configuration file with:
 
 ```bash
-php artisan vendor:publish --provider="JustSteveKing\Laravel\LaravelStoplight\StoplightServiceProvider" --tag="config"
+php artisan vendor:publish --provider="NCMuseumOfNaturalSciences\Laravel\LaravelStoplight\StoplightServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -30,12 +31,23 @@ This is the contents of the published config file:
 return [
     'title' => 'API Documentation',
     'path' => [
-        'name' => env('STOPLIGHT_PATH_NAME', 'docs'),
-        'url' => env('STOPLIGHT_PATH_URL', 'api/docs'),
+            'development' => [
+                'name' => env('STOPLIGHT_DEV_PATH_NAME', 'docs/development'),           
+                'url' => env('STOPLIGHT_DEV_PATH_URL', 'api/docs/development'),
+            ],
+            'production' => [
+                'name' => env('STOPLIGHT_PROD_PATH_NAME', 'docs/production'),           
+                'url' => env('STOPLIGHT_PROD_PATH_URL', 'api/docs/production'),
+            ]
     ],
 
     'openapi' => [
-        'path' => env('STOPLIGHT_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
+         'development' => [
+                'path' => env('STOPLIGHT_DEV_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
+            ],
+            production => [
+                 'path' => env('STOPLIGHT_PROD_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
+            ],
     ],
 
     'config' => [
@@ -52,13 +64,11 @@ return [
 Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) for details.
 
 
-## Security
-
-If you discover any security related issues, please email juststevemcd@gmail.com instead of using the issue tracker.
-
-
 ## Credits
+Updated Package
+- [Ben Norton][link-author]
 
+Original Package (https://github.com/JustSteveKing/laravel-stoplight-elements)
 - [Steve McDougall][link-author]
 - [All Contributors][link-contributors]
 - [Stoplight Team for the Elements Web Components](https://stoplight.io/open-source/elements/)
