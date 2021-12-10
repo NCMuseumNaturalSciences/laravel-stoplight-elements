@@ -1,11 +1,6 @@
 # Laravel Stoplight Elements
 FORK OF https://github.com/JustSteveKing/laravel-stoplight-elements
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-github-action]][link-github-action]
-[![Total Downloads][ico-downloads]][link-downloads]
-
 Easily publish your API documentation using your OpenAPI document in your Laravel Application.
 
 ## Installation
