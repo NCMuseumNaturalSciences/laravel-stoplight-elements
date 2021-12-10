@@ -13,7 +13,7 @@ class StoplightServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             // Publish Config
             $this->publishes([
-                __DIR__ . '/../config/stoplight.php' => config_path('stoplight.php'),
+                __DIR__ . '/../config/ncmns-stoplight.php' => config_path('ncmns-stoplight.php'),
             ], 'config');
 
             // Publish Views
