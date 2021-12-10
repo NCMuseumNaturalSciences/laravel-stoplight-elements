@@ -19,11 +19,18 @@ return [
     | Customise the name and url of where your API documentation will respond.
     |
     */
-    'path' => [
-        'name' => env('STOPLIGHT_PATH_NAME', 'docs'),
-        'url' => env('STOPLIGHT_PATH_URL', 'api/docs'),
+   'path' => [
+            'development' => [
+                'name' => env('STOPLIGHT_DEV_PATH_NAME', 'docs/development'),           
+                'url' => env('STOPLIGHT_DEV_PATH_URL', 'api/docs/development'),
+            ],
+            'production' => [
+                'name' => env('STOPLIGHT_PROD_PATH_NAME', 'docs/production'),           
+                'url' => env('STOPLIGHT_PROD_PATH_URL', 'api/docs/production'),
+            ]
     ],
 
+  
     /*
     |--------------------------------------------------------------------------
     | OpenAPI Specification
@@ -32,9 +39,15 @@ return [
     | Provide a link to your local or cloud based open api specification.
     |
     */
-    'openapi' => [
-        'path' => env('STOPLIGHT_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
+      'openapi' => [
+         'development' => [
+                'path' => env('STOPLIGHT_DEV_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
+            ],
+            production => [
+                 'path' => env('STOPLIGHT_PROD_OPENAPI_PATH', 'https://api.apis.guru/v2/specs/github.com/1.1.4/openapi.yaml')
+            ],
     ],
+
 
     'config' => [
         /*
