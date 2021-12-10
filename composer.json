@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NCMuseumOfNaturalSciences\\Laravel\\LaravelStoplight\\": "src/"
+            "NCMuseumNaturalSciences\\Laravel\\LaravelStoplight\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NCMuseumOfNaturalSciences\\Laravel\\LaravelStoplight\\Tests\\": "tests/"
+            "NCMuseumNaturalSciences\\Laravel\\LaravelStoplight\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "NCMuseumOfNaturalSciences\\Laravel\\LaravelStoplight\\StoplightServiceProvider"
+                "NCMuseumNaturalSciences\\Laravel\\LaravelStoplight\\StoplightServiceProvider"
             ]
         }
     }
