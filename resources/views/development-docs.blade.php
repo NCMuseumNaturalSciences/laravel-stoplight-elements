@@ -11,7 +11,7 @@
   <body>
 
     <elements-api
-      apiDescriptionUrl="{{ config('stoplight.openapi.path') }}"
+      apiDescriptionUrl="{{ config('stoplight.openapi.development.path') }}"
       router="{{ config('stoplight.config.router') }}"
       layout="{{ config('stoplight.config.layout') }}"
     />
