@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JustSteveKing\Laravel\LaravelStoplight;
+namespace NCMuseumNaturalSciences\Laravel\LaravelStoplight;
 
 use Illuminate\Support\ServiceProvider;
 
